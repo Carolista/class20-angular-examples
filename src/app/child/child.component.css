@@ -1,0 +1,12 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.name {
+  color: salmon;
+  font-weight: bold;
+  text-transform: uppercase;
+}

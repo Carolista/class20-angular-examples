@@ -1,0 +1,23 @@
+<div id="main">
+
+  <div>
+    <label for="firstNameInput">First Name: </label>
+    <input id="firstNameInput" type="text" [value]="firstName" /> 
+    
+    <p [style.color]="messageColor">{{ message }}</p>
+  
+    <div *ngFor="let word of words">
+      <span [class.bold]="word.includes('Script')">{{ word }}</span>
+    </div>
+  </div>
+
+  <div>
+    <div class="list">
+      <div class="listed-item" *ngFor="let item of items" (click)="selectItem(item)">
+        {{ item.name }}
+      </div>
+    </div>
+    
+    <app-child [item]="selectedItem"></app-child>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 10vw;
+  box-sizing: border-box;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.listed-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+  color: white;
+  text-transform: uppercase;
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+}
